@@ -54,6 +54,10 @@ main {
   align-items: center;
 }
 
+#demo {
+  font: 3vw "Lato";
+}
+
 .yellow {
   margin: 2vh;
   width: 60vw;
