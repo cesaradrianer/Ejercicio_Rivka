@@ -4,6 +4,11 @@ body {
 a {
   text-decoration: none;
   color: rgb(121, 121, 121);
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: black;
 }
 
 #head {
