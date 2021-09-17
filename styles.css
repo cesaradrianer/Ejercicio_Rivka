@@ -1,6 +1,10 @@
 body {
   margin: 0;
 }
+a {
+  text-decoration: none;
+  color: rgb(121, 121, 121);
+}
 
 #head {
   display: flex;
@@ -128,6 +132,47 @@ main > h3 {
 
 .img {
   max-width: 450px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+#popup-body {
+  text-align: center;
+  padding: 20px;
+  width: 20%;
+  border-radius: 20px;
+  background-color: white;
+  position: relative;
+  margin: 20% auto;
+  transition: all 1s;
+}
+
+#popup-body > h2 {
+  font: 2vw "Lato";
+}
+
+#close {
+  text-align: end;
+}
+
+#close:target .overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 @media screen and (max-width: 1024px) {
