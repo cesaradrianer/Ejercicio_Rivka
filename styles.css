@@ -1,13 +1,17 @@
 body {
   margin: 0;
 }
-a {
+.yellow > a {
   text-decoration: none;
-  color: rgb(121, 121, 121);
+  color: rgb(255, 255, 255);
   transition: color 0.5s;
 }
 
-a:hover {
+.yellow > a:hover {
+  color: rgb(141, 141, 141);
+}
+
+a {
   color: black;
 }
 
