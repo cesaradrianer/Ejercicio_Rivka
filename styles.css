@@ -163,7 +163,7 @@ main > h3 {
 #popup-body {
   text-align: center;
   padding: 20px;
-  width: 20%;
+  width: 40%;
   border-radius: 20px;
   background-color: white;
   position: relative;
@@ -171,8 +171,34 @@ main > h3 {
   transition: all 1s;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #popup-body > h2 {
   font: 2vw "Lato";
+}
+
+button {
+  width: 50%;
+  border: 0;
+  background-color: #302ec2;
+  color: white;
+  font: 20px "Lato";
+  white-space: nowrap;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#send {
+  border: 1px solid;
+  border-radius: 6px;
+  border-color: #dadada;
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 90%;
 }
 
 #close {
@@ -267,6 +293,10 @@ main > h3 {
 @media screen and (max-width: 375px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  button {
+    width: 70%;
   }
 
   #grid-container-last {
