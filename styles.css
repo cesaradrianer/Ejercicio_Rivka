@@ -203,6 +203,14 @@ main > h3 {
     background-position: top;
   }
 
+  #popup-body {
+    width: 60%;
+  }
+
+  #popup-body > h2 {
+    font-size: 6vw;
+  }
+
   .head-title {
     font-size: 6vw;
   }
