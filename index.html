@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <header id = "head">
+        <h1 class = "head-title">ARE YOU READY</h1>
+        <h1 id = "head-title-light">TO BECOME A LAND FLIPPING</h1>
+        <H1 class = "head-title">MASTER</H1>
+        <h3 id = "head-p">with Jack and Michelle Bosch</h3>
+    </header>
+
+    <main>
+        <h2 class = "yellow">REGISTER HERE</h2>
+        <h3>Happening LIVE on the Land Profit Generator Facebook Page.</h3>
+        <p class = "text">Discover the techniques that 97% of all top land flippers<br>use to do more than 150 deals per year</p>
+        <h2 id = "blue">FREE 3-DAY<br>LAND PROFIT MASTER CLASS<br>JUNE 22 5PM (PTS)</h2>
+        <p class = "text">Even if you have already done land deals, you cannot afford to miss this<br>live class, where we uncover the secrets to SCALING your business.</p>
+        <h2 class = "yellow">WHAT WILL YOU GET?</h2>
+    </main>
+
+    <section id = "grid">
+        <div class = "grid-container">
+        <div class="grid-item">
+            <p>How the top 3% of<br>
+                land flippers can do<br>
+                150+ deals a year<br>
+                part-time while still<br>
+                having freedom</p>
+        </div>
+        <div class="grid-item">
+            <p>How to Negotiate<br>
+                like a Jedi-Master<br>
+                to buy for pennies<br>
+                on the Dollar and<br>
+                sell for top Dollar</p>
+        </div>
+        <div class="grid-item">
+            <p>How to build a<br>
+                "NonWanters"<br>
+                Seller Lead<br>
+                Generating<br>
+                Machine</p>
+        </div>
+        <div class="grid-item">
+            <p>How to sell your<br>
+                properties fast<br>
+                and have<br>
+                prospects<br>
+                begging to buy<br>
+                your properties</p>
+        </div>
+        <div class="grid-item">
+            <p>How to track<br>
+                what matters: our<br>
+                "secret sauce" to<br>
+                accelerate growth<br>
+                and generate<br>
+                explosive profits</p>
+        </div>
+        <div class="grid-item">
+            <p>How to select<br>
+                the "Right"<br>
+                Areas and how<br>
+                to go about<br>
+                finding them</p>
+        </div>
+        </div>
+    </section>
+
+    <section id = "testimonies">
+        <h2 class = "yellow">REGISTER HERE</h2>
+        <div id = "grid-container-last">
+            <div class="grid-item-last">
+                <img class = "img" src="./src/imgs/Captura de pantalla 2021-09-17 143449.png" alt="">
+            </div>
+            <div class="grid-item-last">
+                <img class = "img" src="./src/imgs/Captura de pantalla 2021-09-17 143856.png" alt="">
+            </div>
+            <div class="grid-item-last">
+                <img class = "img" src="./src/imgs/Captura de pantalla 2021-09-17 143915.png" alt="">
+            </div>
+            <div class="grid-item-last">
+                <img class = "img" src="./src/imgs/Captura de pantalla 2021-09-17 143930.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 17, 2021 15:23:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</body>
+</html>
