@@ -1,16 +1,8 @@
 body {
   margin: 0;
 }
-.yellow > a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  transition: color 0.5s;
-}
 
-.yellow > a:hover {
-  color: rgb(141, 141, 141);
-}
-
+/*Header styles*/
 a {
   color: black;
 }
@@ -52,6 +44,7 @@ a {
   font-size: 3vw;
 }
 
+/*Main styles*/
 main {
   display: flex;
   flex-direction: column;
@@ -74,6 +67,15 @@ main {
   border-radius: 20px;
 }
 
+.yellow > a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color 0.5s;
+}
+
+.yellow > a:hover {
+  color: rgb(141, 141, 141);
+}
 main > h3 {
   color: #d4af37;
   font: 2.5vw "Lato";
@@ -99,6 +101,7 @@ main > h3 {
   border-radius: 20px;
 }
 
+/*Grid-Containers*/
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -147,6 +150,7 @@ main > h3 {
   max-width: 450px;
 }
 
+/*Pop-Up styles*/
 .overlay {
   position: fixed;
   top: 0;
@@ -214,6 +218,7 @@ button {
   opacity: 0;
 }
 
+/*Media queries*/
 @media screen and (max-width: 1024px) {
   .img {
     max-width: 400px;
